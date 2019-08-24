@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>问题发布</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <script src="jquery3/jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/community.css">
+</head>
+<body>
+<!-- 公共页面整合 -->
+<div th:insert="fragment/header::header">
+</div>
+
+<div class="container-fluid container-publish">
+    <div class="row">
+        <div class="col-1g-9 col-md-9 col-sm-12 col-xs-12">
+
+            <h2 ><span class="glyphicon glyphicon-align-left"></span>发现</h2>
+            <form class="form" th:action="pub" th:method="post" name="publish-form">
+                <input type="hidden" th:name="${session.modifyQuestion != null}?modify" th:value="${session.modifyQuestion != null }?session.modifyQuestion.id">
+            <div>
+                <!--<form class="form">-->
+                    <div class="form-group">
+                        <label for="title">问题标题</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="问题标题" th:value="${session.modifyQuestion != null}?${session.modifyQuestion.question_title}">
+                    </div>
+                <!--</form>-->
+            </div>
+            <div>
+                <!--<form class="form">-->
+                    <div class="form-group">
+                        <label for="description">问题补充</label>
+                        <textarea class="form-control" id="description" name="description" placeholder="问题描述..." rows="10" th:text="${session.modifyQuestion != null}?${session.modifyQuestion.question_detail}"></textarea>
+                    </div>
+                <!--</form>-->
+            </div>
+
+            <div>
+                <!--<form class="form">-->
+                    <div class="form-group">
+                        <label for="tags">添加标签</label>
+                        <input type="text" class="form-control" id="tags" name="tags" placeholder="问题标签" th:value="${session.modifyQuestion != null}?${session.modifyQuestion.question_tags}">
+                    </div>
+                <!--</form>-->
+            </div>
+            <input class="form-control btn btn-primary btn-publish" th:value="提交" type="submit" name="btn-submit"></input>
+            </form>
+            <!--<button class="btn btn-warning" th:if="${publish-status != null}" th:value="${${publish-status}}"></button>-->
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <h2>提交问题方法</h2>
+            1</br>
+            2</br>
+            3</br>
+            4</br>
+            5</br>
+        </div>
+    </div>
+</div>
+</body>
+</html>

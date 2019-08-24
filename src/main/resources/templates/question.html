@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${session.question.question_title}]]</title>
+    <link rel="stylesheet" href="/bootstrap3/css/bootstrap.min.css">
+    <script src="/jquery3/jquery-3.3.1.js"></script>
+    <script src="/bootstrap3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/community.css">
+</head>
+<body>
+<div th:insert="fragment/header::header">
+</div>
+
+<div class="container-fluid container-publish">
+    <div class="row container-question">
+        <div class="col-1g-9 col-md-9 col-sm-12 col-xs-12">
+            <h2 >[[${session.question.question_title}]]</h2>
+            <span class="question-font">作者：[[${session.question.creator.user_name}]] |
+                  发布时间：[[${session.question.gmt_create}]] |
+                  阅读数：00
+            </span>
+            <hr>
+
+            <span>[[${session.question.question_detail}]]</span>
+            <hr>
+            <a th:if="${session.user.id == session.question.creator_id}" th:href="@{/publish(id=${session.question.id})}"><span class="glyphicon glyphicon-pencil question-font">编辑</span></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <h5>发起人</h5>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object avator-size" th:src="@{${session.question.creator.user_avator_url}}" alt="avator">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <span class="question-font">[[${session.question.creator.user_name}]]</span>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+</body>
+</html>

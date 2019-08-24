@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到Java社区</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <script src="jquery3/jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/community.css">
+
+
+</head>
+<body>
+
+<div th:insert="fragment/header::header">
+</div>
+
+<div class="container-fluid container-publish">
+    <div class="row container-question" th:if="${session.questionList != null}">
+        <div class="col-1g-9 col-md-9 col-sm-12 col-xs-12">
+            <h2 ><span class="glyphicon glyphicon-align-left"></span>发现</h2>
+            <hr>
+            <div class="media" th:each="question : ${session.page.currentPageItem}">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object avator-size" th:src="@{${question.creator.user_avator_url}}" alt="avator">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><a th:href="@{'/question/' + ${question.id}}">[[${question.question_title}]]</a></h4>
+                    <span class="question-font">0 个回复 • 28 次浏览 • 2019-08-02 18:24</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <h2>动态</h2>
+            1</br>
+            2</br>
+            3</br>
+            4</br>
+            5</br>
+        </div>
+    </div>
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li th:if="${session.page.showFirst == true}">
+                <a th:href="@{/(currentPage=1)}" aria-label="Previous">
+                    <span aria-hidden="true">&lt;&lt;</span>
+                </a>
+            </li>
+            <li th:if="${session.page.showPrevious == true}">
+                <a th:href="@{/(currentPage=${session.page.currentPage - 1})}" aria-label="Previous">
+                    <span aria-hidden="true">&lt;</span>
+                </a>
+            </li>
+            <li th:each="pageNumber : ${session.page.pageNumberList}" th:class="${pageNumber == session.page.currentPage}?'active'"><a th:href="@{@{/(currentPage=${pageNumber})}}">[[${pageNumber}]]</a></li>
+            <li th:if="${session.page.showNext == true}">
+                <a th:href="@{/(currentPage=${session.page.currentPage + 1})}" aria-label="Next">
+                    <span aria-hidden="true">&gt;</span>
+                </a>
+            </li>
+            <li th:if="${session.page.showLast == true}">
+                <a th:href="@{/(currentPage=${session.page.totalPage})}" aria-label="Next">
+                    <span aria-hidden="true">&gt;&gt;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+</body>
+</html>

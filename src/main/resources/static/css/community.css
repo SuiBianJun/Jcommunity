@@ -1,0 +1,31 @@
+body{
+    background-color: darkgrey;
+}
+
+.container-publish{
+    margin: auto 100px;
+    background-color: white;
+}
+
+.btn-publish{
+    float: right;
+    margin-bottom: 50px;
+}
+
+.avator-size{
+    height: 38px;
+}
+
+.container-question{
+    margin-top: 20px;
+}
+
+.question-font{
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+}
+
+.profile-right{
+    margin-top: 20px;
+}

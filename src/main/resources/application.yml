@@ -1,0 +1,34 @@
+spring:
+  thymeleaf:
+    cache: false
+    mode: HTML
+    suffix: .html
+    enabled: true
+  #  devtools:
+#    restart:
+#      enabled: true
+#      additional-paths: src/main/java
+#      exclude: templates/**
+
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/templates/
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/community
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+oauth:
+    dlg:
+      clientId: 5f47304a01c84a4830ac
+      secretId: ddb1180483c5789fe11e6137b4a5ead8b1addc58
+    callbackRedirectUrl: http://localhost:8080/callback
+    userInfoRequestUrl: https://api.github.com/user
+    accessTokenUrl: https://github.com/login/oauth/access_token
+logging:
+  level: debug
