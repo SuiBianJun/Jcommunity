@@ -30,7 +30,7 @@ public class ErrorHandler extends ResponseEntityExceptionHandler {
 
         logger.info("erro handler");
         HttpStatus status = getStatus(request);
-        m.addAttribute("msg", "访问的网页不存在");
+        m.addAttribute("msg", ex.getMessage());
 
         return new ModelAndView("error");
     }

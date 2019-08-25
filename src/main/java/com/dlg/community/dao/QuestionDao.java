@@ -6,11 +6,12 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
+
 public interface QuestionDao extends JpaRepository<Question, Integer> {
 
     @Query(nativeQuery = true, value = "select * from t_question_info limit :start,:count")
@@ -29,4 +30,9 @@ public interface QuestionDao extends JpaRepository<Question, Integer> {
     @Modifying(clearAutomatically = true)
     @Query(nativeQuery = true, value = "update t_question_info set question_title=:title, question_detail=:detail, question_tags=:tags where id=:id")
     void updateById(@Param("id") Integer id, @Param("title") String title, @Param("detail") String detail, @Param("tags") String tags);
+
+    @Transactional
+    @Modifying(clearAutomatically = true)
+    @Query(nativeQuery = true, value="update t_question_info set view_count = view_count + 1 where id=:id")
+    void updateQuestionViewCount(@Param("id") Integer id);
 }

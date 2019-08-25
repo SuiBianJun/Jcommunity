@@ -4,6 +4,7 @@ import com.dlg.community.dao.QuestionDao;
 import com.dlg.community.dao.UserLoginStatusDao;
 import com.dlg.community.dto.PageVO;
 import com.dlg.community.dto.QuestionVO;
+import com.dlg.community.enums.ErrorCode;
 import com.dlg.community.error.MyException;
 import com.dlg.community.pojo.Question;
 import com.dlg.community.pojo.UserLoginStatus;
@@ -12,7 +13,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -104,8 +104,10 @@ public class QuestionService {
         Question question = questionDao.getQuestionById(id);
 
         if(question == null){
-            throw new MyException("访问的页面不存在");
+            throw new MyException(ErrorCode.PAGE_NOT_FOUND);
         }
+
+        questionDao.updateQuestionViewCount(question.getId());
 
         QuestionVO questionVO = new QuestionVO();
         questionVO.setCreator(userLoginStatusDao.selUserById(question.getCreator_id()));

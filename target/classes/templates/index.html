@@ -28,7 +28,7 @@
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading"><a th:href="@{'/question/' + ${question.id}}">[[${question.question_title}]]</a></h4>
-                    <span class="question-font">0 个回复 • 28 次浏览 • 2019-08-02 18:24</span>
+                    <span class="question-font">0 个回复 • [[${question.view_count}]] 次浏览 • 2019-08-02 18:24</span>
                 </div>
             </div>
         </div>

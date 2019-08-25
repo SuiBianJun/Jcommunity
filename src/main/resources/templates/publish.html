@@ -19,7 +19,7 @@
 
             <h2 ><span class="glyphicon glyphicon-align-left"></span>发现</h2>
             <form class="form" th:action="pub" th:method="post" name="publish-form">
-                <input type="hidden" th:name="${session.modifyQuestion != null}?modify" th:value="${session.modifyQuestion != null }?session.modifyQuestion.id">
+                <input type="hidden" th:name="${session.modifyQuestion != null}?modify" th:value="${session.modifyQuestion != null }?${session.modifyQuestion.id}">
             <div>
                 <!--<form class="form">-->
                     <div class="form-group">

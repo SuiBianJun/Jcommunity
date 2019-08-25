@@ -9,7 +9,10 @@ spring:
 #      enabled: true
 #      additional-paths: src/main/java
 #      exclude: templates/**
-
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
   resources:
     static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/templates/
 

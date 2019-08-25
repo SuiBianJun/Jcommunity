@@ -15,6 +15,6 @@ public class QuestionVO {
     private Date gmt_create;
     private Date gmt_update;
     private Integer creator_id;
-
+    private Integer view_count;
     private UserLoginStatus creator;
 }

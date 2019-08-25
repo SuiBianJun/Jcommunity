@@ -63,7 +63,7 @@ public class QuestionController {
 
         Question question = new Question();
         question.setQuestion_title(title).setQuestion_detail(description).setQuestion_tags(tags)
-                .setGmt_create(new Date()).setGmt_update(new Date()).setCreator_id(user.getId());
+                .setGmt_create(new Date()).setGmt_update(new Date()).setCreator_id(user.getId()).setView_count(0);
 
         // questionDao.exists()
         if(req.getParameter("modify") != null){
