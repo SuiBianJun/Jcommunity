@@ -1,5 +1,7 @@
 package com.dlg.community.error;
 
+import com.alibaba.fastjson.JSON;
+import com.dlg.community.dto.ErrorVO;
 import com.dlg.community.service.QuestionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +15,10 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 
 /*
 *
@@ -26,13 +32,38 @@ public class ErrorHandler extends ResponseEntityExceptionHandler {
     Logger logger = LoggerFactory.getLogger(ErrorHandler.class);
 
     @ExceptionHandler(Exception.class)
-    ModelAndView handleControllerException(HttpServletRequest request, Throwable ex, Model m) {
+    Object handleControllerException(HttpServletRequest request,
+                                           HttpServletResponse response, Throwable ex, Model m) {
 
-        logger.info("erro handler");
-        HttpStatus status = getStatus(request);
-        m.addAttribute("msg", ex.getMessage());
+        if("application/json".equals(request.getContentType())){
+            // json请求,返回json数据
+            MyException exception = (MyException) ex;
+            logger.info("exception: " + ErrorVO.errorOf(exception));
+            //response.setCharacterEncoding("utf-8");
+            response.setHeader("content-type", "text/html;charset=utf-8");
+            try {
 
-        return new ModelAndView("error");
+                PrintWriter pw = response.getWriter();
+                pw.write(JSON.toJSONString(ErrorVO.errorOf(exception)));
+                pw.flush();
+                //OutputStream os = response.getOutputStream();
+                //os.write(JSON.toJSONString(ErrorVO.errorOf(exception)).getBytes());
+                //os.flush();
+                pw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }finally {
+                return null;
+            }
+        }else{// 返回页面
+
+            logger.info("erro handler");
+            HttpStatus status = getStatus(request);
+            m.addAttribute("msg", ex.getMessage());
+
+            return new ModelAndView("error");
+        }
+
     }
 
     private HttpStatus getStatus(HttpServletRequest request) {

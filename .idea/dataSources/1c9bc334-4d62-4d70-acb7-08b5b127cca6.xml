@@ -821,85 +821,155 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="207" parent="2" name="t_question_info">
+    <table id="207" parent="2" name="reply">
+      <Comment>提问[ 回复、评论信息 ]表</Comment>
+    </table>
+    <table id="208" parent="2" name="t_question_info">
       <Comment>问题相关信息表</Comment>
     </table>
-    <table id="208" parent="2" name="t_user_auto_login"/>
-    <column id="209" parent="207" name="id">
+    <table id="209" parent="2" name="t_user_auto_login"/>
+    <column id="210" parent="207" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="210" parent="207" name="question_title">
+    <column id="211" parent="207" name="question_id">
+      <Position>2</Position>
+      <Comment>问题id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="212" parent="207" name="content">
+      <Position>3</Position>
+      <Comment>回复内容
+</Comment>
+      <DataType>varchar(1024)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="213" parent="207" name="gmt_create">
+      <Position>4</Position>
+      <Comment>创建时间
+</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="214" parent="207" name="gmt_update">
+      <Position>5</Position>
+      <Comment>更新时间
+</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="215" parent="207" name="user_id">
+      <Position>6</Position>
+      <Comment>回复人用户id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="216" parent="207" name="type">
+      <Position>7</Position>
+      <Comment>1-&gt;回复
+2-&gt;评论回复</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="217" parent="207" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="218" parent="208" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="219" parent="208" name="question_title">
       <Position>2</Position>
       <Comment>问题标题</Comment>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="211" parent="207" name="question_detail">
+    <column id="220" parent="208" name="question_detail">
       <Position>3</Position>
       <Comment>问题详情</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="212" parent="207" name="question_tags">
+    <column id="221" parent="208" name="question_tags">
       <Position>4</Position>
       <Comment>问题标签</Comment>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="213" parent="207" name="gmt_create">
+    <column id="222" parent="208" name="gmt_create">
       <Position>5</Position>
       <Comment>问题创建时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="214" parent="207" name="gmt_update">
+    <column id="223" parent="208" name="gmt_update">
       <Position>6</Position>
       <Comment>问题修改时间</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="215" parent="207" name="PRIMARY">
+    <column id="224" parent="208" name="creator_id">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="225" parent="208" name="view_count">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="226" parent="208" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="216" parent="208" name="id">
+    <column id="227" parent="209" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="217" parent="208" name="user_token">
+    <column id="228" parent="209" name="user_token">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="218" parent="208" name="gmt_modify">
+    <column id="229" parent="209" name="gmt_modify">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="219" parent="208" name="user_id">
+    <column id="230" parent="209" name="user_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="220" parent="208" name="user_name">
+    <column id="231" parent="209" name="user_name">
       <Position>5</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="221" parent="208" name="gmt_create">
+    <column id="232" parent="209" name="gmt_create">
       <Position>6</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="222" parent="208" name="PRIMARY">
+    <column id="233" parent="209" name="user_avator_url">
+      <Position>7</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="234" parent="209" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

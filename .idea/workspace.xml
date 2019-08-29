@@ -2,30 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d38a2c-11e9-4501-bc47-f3391f3c0f17" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/ReplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/ReplyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/ErrorVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/ReplyVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/Reply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/service/ReplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/community.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c9bc334-4d62-4d70-acb7-08b5b127cca6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1c9bc334-4d62-4d70-acb7-08b5b127cca6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/QuestionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/QuestionVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/QuestionVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/OAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/OAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/UserLoginStatusDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/UserLoginStatusDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/error/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/error/ErrorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/error/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/error/MyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlg/community/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlg/community/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/publish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragment/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/controller/MyErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/controller/MyErrorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/controller/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/dao/QuestionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/enums/ErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/enums/ErrorCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/error/ErrorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/error/ErrorHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/error/MyException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/error/MyException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/pojo/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/pojo/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dlg/community/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dlg/community/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/publish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/question.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,6 +64,13 @@
         <item name="community" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="community: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="reply: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="community" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="community: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="t_question_info: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
@@ -85,10 +89,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/service/QuestionService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/ReplyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+            <state relative-caret-position="421">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,19 +101,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/service/ReplyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="30" column="82" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dto/QuestionVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="190">
+              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,10 +113,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/community.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/error/MyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/error/ErrorHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="42" column="74" lean-forward="true" selection-start-line="42" selection-start-column="74" selection-end-line="42" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/MvcConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dto/ErrorVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,61 +178,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dao/QuestionDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="342">
+              <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#39#1" expanded="true" />
-                <element signature="e#0#66#1" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/CommunityApplication.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dao/ReplyDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="87" column="43" lean-forward="true" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/publish.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="21" column="161" selection-start-line="21" selection-start-column="161" selection-end-line="21" selection-end-column="161" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/QuestionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="108">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,10 +206,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -215,41 +225,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/GetTokenDto.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/test.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/GetUserInfoParameters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/GetTokenParameters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/BeanCfg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/LogBean.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1c9bc334-4d62-4d70-acb7-08b5b127cca6/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1c9bc334-4d62-4d70-acb7-08b5b127cca6/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1c9bc334-4d62-4d70-acb7-08b5b127cca6/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/PublishDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/PublishController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/CommunityApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/UserLoginStatus.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__Add_imageUrl_community.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/GithubUserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/UserLoginStatusDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/Swagger2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/PageVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/OAuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/service/ProfileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/ProfileController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragment/header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/community.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/interceptor/UserLoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/profile/profile-myquestion.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/MvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error/4xx.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error/5xx.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/ErrorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/MyErrorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/error/ErrorHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/error/MyException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/Question.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
@@ -257,10 +252,30 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/publish.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/service/QuestionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/QuestionController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/question.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/QuestionVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/ReplyVO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/CommunityApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/service/CommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/ICommentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/IReplyDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/Reply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/ReplyDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/ReplyController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragment/header.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dao/UserLoginStatusDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/controller/OAuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/question.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/MvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/service/ReplyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/error/MyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/dto/ErrorVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dlg/community/error/ErrorHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/community.js" />
       </list>
     </option>
   </component>
@@ -306,7 +321,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1681" />
     <option name="y" value="-244" />
     <option name="width" value="1364" />
@@ -322,18 +337,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="community" type="58d84e3e:PackageViewProjectNode" />
-              <item name="community" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -439,6 +442,17 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="dlg" type="462c0819:PsiDirectoryNode" />
               <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dlg" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
               <item name="error" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -495,6 +509,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -505,6 +537,36 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="community" type="b2602c69:ProjectViewProjectNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="community" type="58d84e3e:PackageViewProjectNode" />
+              <item name="community" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -653,12 +715,15 @@
       <workItem from="1565707702800" duration="4938000" />
       <workItem from="1565791269087" duration="2141000" />
       <workItem from="1566651265352" duration="7784000" />
-      <workItem from="1566710738135" duration="4661000" />
+      <workItem from="1566710738135" duration="5406000" />
+      <workItem from="1566914594274" duration="5580000" />
+      <workItem from="1566996256207" duration="6075000" />
+      <workItem from="1567083665511" duration="6755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101364000" />
+    <option name="totallyTimeSpent" value="120519000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -670,24 +735,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-460" width="1936" height="1066" extended-state="7" />
+    <frame x="-1928" y="-460" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="-1195" y="-392" width="469" height="930" id="Project" order="0" sideWeight="0.49358973" visible="true" weight="0.21428572" />
+      <window_info active="true" content_ui="combo" x="-1195" y="-392" width="469" height="930" id="Project" order="0" sideWeight="0.49358973" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.50641024" side_tool="true" weight="0.20095949" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.4860515" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.3916309" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4892704" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.471597" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32832617" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.50214595" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2811159" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.37982833" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32903227" />
@@ -698,7 +763,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32995737" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.1673774" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.20202559" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.271855" />
       <window_info anchor="right" id="Maven" order="7" weight="0.23720682" />
@@ -707,18 +772,27 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="ErrorVO.errorOf(exception)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>ErrorVO.errorOf(exception)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://H:/javaMavenRep/org/springframework/spring-web/4.3.17.RELEASE/spring-web-4.3.17.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://H:/javaMavenRep/org/springframework/spring-webmvc/4.3.17.RELEASE/spring-webmvc-4.3.17.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1062">
@@ -736,64 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/GithubUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragment/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/service/ProfileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/UserLoginStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/community.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/MvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="126" lean-forward="true" selection-start-line="17" selection-start-column="126" selection-end-line="17" selection-end-column="126" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -807,29 +827,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_user_auto_login" />
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/OAuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/5xx.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/interceptor/UserLoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -857,16 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/error/ErrorHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/MyErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -874,55 +862,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/error/MyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -936,49 +875,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/service/QuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dao/UserLoginStatusDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="1710">
+          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#0#61#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/CommunityApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dto/QuestionVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="252">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -987,124 +897,142 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="87" column="43" lean-forward="true" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        <state relative-caret-position="1566">
+          <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/community.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/CommunityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/GithubUserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/publish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="161" selection-start-line="21" selection-start-column="161" selection-end-line="21" selection-end-column="161" />
+        <state relative-caret-position="612">
+          <caret line="34" column="220" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="220" />
         </state>
       </provider>
     </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/service/ProfileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dao/QuestionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="594">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#0#39#1" expanded="true" />
-            <element signature="e#0#66#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/service/QuestionService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/Reply.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/QuestionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dto/ReplyVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="234">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
+    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/reply">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/question.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragment/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="435">
+          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="30" column="82" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="82" />
+        <state relative-caret-position="144">
+          <caret line="20" column="76" lean-forward="true" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+          <folding>
+            <element signature="e#1846#1850#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dto/QuestionVO.java">
+    <entry file="jar://H:/javaMavenRep/org/springframework/data/spring-data-commons/1.13.12.RELEASE/spring-data-commons-1.13.12.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="144">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dao/UserLoginStatusDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#61#1" expanded="true" />
+            <element signature="e#0#46#1" expanded="true" />
+            <element signature="e#0#54#1" expanded="true" />
+            <element signature="e#0#67#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/pojo/UserLoginStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1118,10 +1046,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_question_info">
+    <entry file="das://1c9bc334-4d62-4d70-acb7-08b5b127cca6/schema/community/table/t_user_auto_login">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/interceptor/UserLoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/OAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="139" column="50" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/enums/ErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/controller/ReplyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dao/ReplyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/cfg/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/service/ReplyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/error/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/dto/ErrorVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dlg/community/error/ErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="42" column="74" lean-forward="true" selection-start-line="42" selection-start-column="74" selection-end-line="42" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/community.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>

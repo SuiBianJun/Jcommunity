@@ -114,7 +114,11 @@ public class OAuthController {
             userLoginStatus.setGmt_modify(new Date());
             userLoginStatus.setUser_avator_url(githubUserInfo.getAvatar_url());
 
-            userLoginStatusDao.save(userLoginStatus);
+            if(!(userLoginStatusDao.existByUserId(githubUserInfo.getId()) > 0)){
+                userLoginStatusDao.save(userLoginStatus);
+            }else{
+                userLoginStatusDao.updateToken(sessionId, userLoginStatusDao.existByUserId(githubUserInfo.getId()));
+            }
 
             Cookie cookie = new Cookie("logging-user", sessionId);
 
@@ -125,6 +129,17 @@ public class OAuthController {
             System.out.println("name: " + githubUserInfo.getLogin());
         }
         return "redirect:index";
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpServletRequest request){
+
+        // 清除当前用户的token
+        GithubUserInfo githubUserInfo = (GithubUserInfo) request.getSession().getAttribute("user");
+        userLoginStatusDao.deleteByUserId(githubUserInfo.getId());
+        request.getSession().removeAttribute("user");
+        return "redirect:index";
+
     }
 
     /*@RequestMapping(value = {"/", "/index"})

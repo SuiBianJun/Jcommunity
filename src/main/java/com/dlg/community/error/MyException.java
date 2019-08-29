@@ -5,6 +5,7 @@ import com.dlg.community.enums.ErrorCode;
 public class MyException extends RuntimeException {
 
     private String message;
+    private Integer errorCode;
 
     public MyException(String message){
         this.message = message;
@@ -12,6 +13,7 @@ public class MyException extends RuntimeException {
 
     public MyException(ErrorCode errorCode){
         this.message = errorCode.getMessage();
+        this.errorCode = errorCode.getErrorCode();
     }
 
     // 传递错误提示信息
@@ -19,4 +21,6 @@ public class MyException extends RuntimeException {
     public String getMessage() {
         return message;
     }
+
+    public Integer getErrorCode(){return errorCode;}
 }

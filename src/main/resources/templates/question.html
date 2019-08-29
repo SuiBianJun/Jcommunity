@@ -7,6 +7,7 @@
     <script src="/jquery3/jquery-3.3.1.js"></script>
     <script src="/bootstrap3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/community.css">
+    <script src="/js/community.js"></script>
 </head>
 <body>
 <div th:insert="fragment/header::header">
@@ -15,16 +16,39 @@
 <div class="container-fluid container-publish">
     <div class="row container-question">
         <div class="col-1g-9 col-md-9 col-sm-12 col-xs-12">
-            <h2 >[[${session.question.question_title}]]</h2>
-            <span class="question-font">作者：[[${session.question.creator.user_name}]] |
-                  发布时间：[[${session.question.gmt_create}]] |
-                  阅读数：[[${session.question.view_count}]]
-            </span>
-            <hr>
+            <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 >[[${session.question.question_title}]]</h2>
+                <span class="question-font">作者：[[${session.question.creator.user_name}]] |
+                      发布时间：[[${session.question.gmt_create}]] |
+                      阅读数：[[${session.question.view_count}]]
+                </span>
+                <hr>
 
-            <span>[[${session.question.question_detail}]]</span>
-            <hr>
-            <a th:if="${session.user.id == session.question.creator_id}" th:href="@{/publish(id=${session.question.id})}"><span class="glyphicon glyphicon-pencil question-font">编辑</span></a>
+                <span>[[${session.question.question_detail}]]</span>
+                <hr>
+                <span th:if="${session.user != null}">
+                    <a th:if="${session.user.id == session.question.creator_id}" th:href="@{/publish(id=${session.question.id})}"><span class="glyphicon glyphicon-pencil question-font">编辑</span></a>
+                </span>
+            </div>
+            <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12">
+                <hr>
+                <div class="media" style="margin-bottom: 10px;">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object avator-size" th:src="@{${session.question.creator.user_avator_url}}" alt="avator">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <span class="question-font">[[${session.question.creator.user_name}]]</span>
+                    </div>
+                </div>
+                <input type="hidden" th:value="${session.question.id}" id="question-id">
+
+                <input type="hidden" th:value="${session.user != null}?${session.user.id}" id="user-id">
+                <textarea class="form-control" id="content" name="content" placeholder="回复..." rows="10"></textarea>
+                <button type="button" class="btn btn-success" style="margin: 10px 0; float: right;" onclick="doReply()">回复</button>
+            </div>
+
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <h5>发起人</h5>

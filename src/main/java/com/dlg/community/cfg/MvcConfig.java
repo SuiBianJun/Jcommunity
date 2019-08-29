@@ -15,7 +15,8 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
-        registry.addInterceptor(userLoginInterceptor).addPathPatterns("/**").excludePathPatterns("/", "/index", "/callback", "");
+        registry.addInterceptor(userLoginInterceptor).addPathPatterns("/**").excludePathPatterns("/", "/index", "/callback", "/question/**",
+                "/reply/**");
 
         super.addInterceptors(registry);
 

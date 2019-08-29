@@ -3,7 +3,9 @@ package com.dlg.community.enums;
 public enum ErrorCode {
 
     PAGE_NOT_FOUND(1, "访问的页面不存在"),
-    SERVER_ERROR(2, "服务器内部错误");
+    SERVER_ERROR(2, "服务器内部错误"),
+    QUESTION_NOT_FOUND(3, "回复的问题已经不存在"),
+    USER_NOT_LOGIN(4, "请先登录");
 
     Integer errorCode;
     String errorMsg;
@@ -20,5 +22,7 @@ public enum ErrorCode {
     public String getMessage(){
         return this.errorMsg;
     }
+
+    public Integer getErrorCode(){return this.errorCode;}
 
 }
