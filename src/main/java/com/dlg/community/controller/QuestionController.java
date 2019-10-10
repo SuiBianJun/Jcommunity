@@ -3,6 +3,7 @@ package com.dlg.community.controller;
 import com.dlg.community.dao.QuestionDao;
 import com.dlg.community.pojo.GithubUserInfo;
 import com.dlg.community.pojo.Question;
+import com.dlg.community.response.ResponseVO;
 import com.dlg.community.service.QuestionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -81,7 +82,23 @@ public class QuestionController {
 
         req.getSession().setAttribute("question", questionService.getQuestionById(questionId));
 
+        // 带上question reply
+        req.getSession().setAttribute("questionReply", questionService.getQuestionReplyVOS(questionId, 1));
+
         return "question";
+    }
+
+    @GetMapping("/question/tags")
+    @ResponseBody
+    public ResponseVO questionTag(){
+
+        return new ResponseVO(0, "操作成功", questionService.getAllQuestionTag());
+
+    }
+
+    @GetMapping("/question/relative")
+    public ResponseVO relativeQuestion(){
+        return null;
     }
 
 }

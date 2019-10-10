@@ -16,6 +16,7 @@
 <div class="container-fluid container-publish">
     <div class="row container-question">
         <div class="col-1g-9 col-md-9 col-sm-12 col-xs-12">
+            <!-- 问题详情 -->
             <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12">
                 <h2 >[[${session.question.question_title}]]</h2>
                 <span class="question-font">作者：[[${session.question.creator.user_name}]] |
@@ -26,10 +27,50 @@
 
                 <span>[[${session.question.question_detail}]]</span>
                 <hr>
+                <!-- tag 显示区 -->
+                <div th:if="${session.question.tagList != null}">
+                    <span class="glyphicon glyphicon-tags" aria-hidden="true" style="background-color: darkgray; margin-right: 5px;" th:each="tag : ${session.question.tagList}"> [[${tag}]]</span>
+                </div>
+                <hr>
                 <span th:if="${session.user != null}">
                     <a th:if="${session.user.id == session.question.creator_id}" th:href="@{/publish(id=${session.question.id})}"><span class="glyphicon glyphicon-pencil question-font">编辑</span></a>
                 </span>
             </div>
+
+            <!-- 问题已回复内容 -->
+            <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- 一级评论 -->
+                <hr>
+                <h4>共 <span  th:text="${session.questionReply == null}?'0':${session.questionReply.size()}"></span> 个回复</h4>
+                <hr>
+
+                <div th:if="${session.questionReply != null}" th:each="reply : ${session.questionReply}">
+                    <div class="media" style="margin-bottom: 10px;">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object avator-size" th:src="@{${reply.user.user_avator_url}}" alt="avator">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <span class="question-font">[[${reply.user.user_name}]]</span>
+                            <div class="question-font">[[${reply.content}]]</div>
+                            <div style="margin-top: 10px">
+                                <!--问题发布用户或回复的用户-->
+                                <div th:if="${session.user != null}">
+                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                    <span th:if="${session.user.id == session.question.creator_id} or ${session.user.id == reply.user_id}" th:attr="reply-id=${reply.id}" class="glyphicon glyphicon-comment comment-icon" aria-hidden="true" style="margin-left: 10px" onclick="showComment(this)"></span>
+                                </div>
+                            </div>
+                            <div th:id="comment-div + ${reply.id}" style="border: 1px solid #eee; display: none;  border-radius: 5px; padding: 5px 5px;" th:attr="question-id=${reply.question_id}, user-id=${reply.user_id}, reply-id=${reply.id}">
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="margin-top: 6px">
+                </div>
+
+            </div>
+
+            <!-- 回复问题 -->
             <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12">
                 <hr>
                 <div class="media" style="margin-bottom: 10px;">
@@ -63,6 +104,12 @@
                 </div>
             </div>
             <hr>
+            <h5>相关问题</h5>
+            <div>
+                <a>aaaaaa</a>
+                <a>aaaaaa</a>
+                <a>aaaaaa</a>
+            </div>
         </div>
     </div>
 </div>

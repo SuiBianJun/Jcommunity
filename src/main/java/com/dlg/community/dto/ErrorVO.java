@@ -14,6 +14,8 @@ public class ErrorVO implements Serializable {
     Integer errorCode;
     String errorMsg;
 
+    Object data;
+
     public ErrorVO(Integer errorCode, String errorMsg) {
         this.errorCode = errorCode;
         this.errorMsg = errorMsg;
@@ -21,6 +23,12 @@ public class ErrorVO implements Serializable {
 
     public static ErrorVO errorOf(ErrorCode errorCode){
         return new ErrorVO(errorCode.getErrorCode(), errorCode.getMessage());
+    }
+
+    public static ErrorVO errorOf(ErrorCode errorCode, Object data){
+        ErrorVO errorVO = new ErrorVO(errorCode.getErrorCode(), errorCode.getMessage());
+        errorVO.setData(data);
+        return errorVO;
     }
 
     public static ErrorVO errorOf(MyException e){

@@ -10,6 +10,20 @@
 
 
 </head>
+
+<script>
+
+    window.onload = function () {
+
+        if('true' == window.localStorage.getItem("login-window-close")){
+            window.close();
+            window.localStorage.removeItem("login-window-close");
+        }
+
+    }
+
+</script>
+
 <body>
 
 <div th:insert="fragment/header::header">

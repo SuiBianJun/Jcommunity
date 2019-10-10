@@ -1,6 +1,8 @@
 package com.dlg.community.dao;
 
 import com.dlg.community.pojo.Question;
+import com.dlg.community.pojo.QuestionRelative;
+import com.dlg.community.pojo.Reply;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -35,4 +37,9 @@ public interface QuestionDao extends JpaRepository<Question, Integer> {
     @Modifying(clearAutomatically = true)
     @Query(nativeQuery = true, value="update t_question_info set view_count = view_count + 1 where id=:id")
     void updateQuestionViewCount(@Param("id") Integer id);
+
+    @Query("select r from Reply r where r.question_id = :id and r.type = :type")
+    List<Reply> getAllQuestionReplyById(@Param("id") Integer id, @Param("type") Integer type);
+
+    List<QuestionRelative> getQuestionRelative(@Param("id") Integer id);
 }

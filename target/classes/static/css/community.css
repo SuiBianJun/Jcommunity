@@ -29,3 +29,11 @@ body{
 .profile-right{
     margin-top: 20px;
 }
+
+.comment-icon :hover{
+    cursor: pointer;
+}
+
+.input-tag:hover {
+    cursor: pointer;
+}
